@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../../OPPS with C++/C++ PROGRAMS"
+		},
+		{
+			"path": "../../../../web designing/HTML"
+		},
+		{
+			"path": "../../objects"
+		},
+		{
+			"path": "../../github desktop/webdesigning_assignments"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Module 2"
+	}
+}
