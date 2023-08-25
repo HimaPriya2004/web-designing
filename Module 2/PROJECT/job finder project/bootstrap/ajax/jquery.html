@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Example 3 (jQuery)</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button onclick="getData()">Get Data</button>
+    <div id="output"></div>
+
+    <script>
+        function getData() {
+            $.ajax({
+                url: 'https://jsonplaceholder.typicode.com/posts/1',
+                method: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    const outputDiv = document.getElementById('output');
+                    outputDiv.textContent = JSON.stringify(data);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

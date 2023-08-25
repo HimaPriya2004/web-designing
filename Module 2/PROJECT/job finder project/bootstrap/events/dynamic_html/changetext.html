@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic HTML Example 1</title>
+</head>
+<body>
+    <h1 id="dynamicText">Hello, World!</h1>
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            const dynamicText = document.getElementById('dynamicText');
+            dynamicText.textContent = 'Hello, Dynamic World!';
+        }
+    </script>
+</body>
+</html>

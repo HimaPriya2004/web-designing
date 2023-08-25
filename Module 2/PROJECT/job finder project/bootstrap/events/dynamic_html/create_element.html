@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic HTML Example 2</title>
+</head>
+<body>
+    <ul id="dynamicList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="addItem()">Add Item</button>
+
+    <script>
+        function addItem() {
+            const dynamicList = document.getElementById('dynamicList');
+            const newItem = document.createElement('li');
+            newItem.textContent = 'New Item';
+            dynamicList.appendChild(newItem);
+        }
+    </script>
+</body>
+</html>
